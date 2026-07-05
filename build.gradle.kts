@@ -6,8 +6,8 @@ buildscript {
     }
     dependencies {
         // AGP 9.0 bundles KGP 2.2.10; override it so Kotlin 2.3.21 is used everywhere.
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.21")
-        classpath("com.google.devtools.ksp:symbol-processing-gradle-plugin:2.3.9")
+        classpath(libs.kotlin.gradle.plugin)
+        classpath(libs.symbol.processing.gradle.plugin)
     }
 }
 
